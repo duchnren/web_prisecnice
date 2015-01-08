@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="alternate stylesheet" href="css/lang/english.css" title="english" media="screen"/>
+    <link rel="alternate stylesheet" href="css/lang/french.css" title="french" media="screen"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css"/>
+    <link rel="icon" href="img/favicon.ico">
+
+    <script src="lib/styleswitch.js"></script>
+
+    <title>Přísečnice / Pressnitz</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><b>
+            <span class="czech">Přísečnice</span>
+            <span class="english">Pressnitz</span>
+            <span class="french">Pressnitz</span></b></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">O Obci</span>
+                <span class="english">Town</span>
+                <span class="french">Le village</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="loc_his.html">
+                  <span class="czech">O Obci</span>
+                  <span class="english">The town</span>
+                  <span class="french">Le village</span>
+                  </a></li>
+<!--
+                  <li><a href="location.html">
+                  <span class="czech">Poloha</span>
+                  <span class="english">Location</span>
+                  <span class="french">La localisation</span>
+                  </a></li>
+                  <li><a href="history.html">
+                  <span class="czech">Historie</span>
+                  <span class="english">History</span>
+                  <span class="french">La histoire</span>
+                  </a></li>
+                  <li><a href="urban.html">
+                  <span class="czech">Urbanistický vývoj</span>
+                  <span class="english">Urban development</span>
+                  <span class="french">Le développement urbain du village</span>
+                  </a></li>
+-->
+                  <li><a href="landUse.html">
+                  <span class="czech">Vývoj využití ploch</span>
+                  <span class="english">Land Use</span>
+                  <span class="french">L'utilisation des terres</span>
+                  </a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">Rekonstrukce obce</span>
+                <span class="english">Reconstruction of the town</span>
+                <span class="french">La reconstruction du village</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="reconstruction.html">
+                  <span class="czech">Úvod</span>
+                  <span class="english">Introduction</span>
+                  <span class="french">La introduction</span>
+                  </a></li>
+                  <li><a href="model_town.html">
+                  <span class="czech">Model středu obce</span>
+                  <span class="english">The model of the town centre</span>
+                  <span class="french">Le modèle du village</span>
+                  </a></li>
+                  <li><a href="models.html">
+                  <span class="czech">Modely buduv</span>
+                  <span class="english">Models</span>
+                  <span class="french">Des modèles de bâtiments</span>
+                  </a></li>
+                </ul>
+              </li>
+              <li><a href="about.html">
+              <span class="czech">O Projektu</span>
+              <span class="english">About</span>
+              <span class="french">A propos du projet</span>
+              </a></li>
+              <li><a href="contakt.html">
+              <span class="czech">Kontakt</span>
+              <span class="english">Contact</span>
+              <span class="french">Le contact</span>
+              </a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">Jazyk</span>
+                <span class="english">Language</span>
+                <span class="french">Langue</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:chooseStyle('none', 60)">Česky</a></li>
+                  <li><a href="javascript:chooseStyle('english', 60)">English</a></li>
+<!--                 <li><a href="javascript:chooseStyle('french', 60)">Fran&ccedil;ais</a></li>-->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <div class="container">
+        <h2><span class="czech">Historie obce</span>
+        <span class="english">History of the town</span>
+        <span class="french"></span></h2>
+
+        <table class="zajuz_tab">
+          <tr>
+            <td>
+              <img src="../img/co.png" alt="cisarský otisk" title="Výřez císařských otisků">
+            </td>
+          </tr>
+          <tr>
+            <td class="label_pic">
+              <span class="czech">Výřez císařských povinných otisků mapy stabilního katastru (<i>získáno z ČÚZK</i>)</span>
+              <span class="english">Cut of Imperial Obligatory Imprints of the Stable Cadastre (<i>obtained from the office ČÚZK</i></span>
+            </td>
+          </tr>
+        </table>
+
+        <p><span class="czech">Nejstarší sídliště na území Přísečnice pochází ze&nbsp;13.&nbsp;století, které vyniklo na obchodní cestě ze Saska do Čech. První písemná zmínka je však až z&nbsp;roku 1335 v&nbsp;listině od&nbsp;Jana&nbsp;Lucemburského, ve které osvobodil od cla lidi, přecházející přes městečko Presnitz do Chomutova a Loun. V&nbsp;této době zde žila již početná skupina německých přistěhovalců a v&nbsp;okolí se dobývala železná ruda.</span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Roku&nbsp;1424 v&nbsp;době husitských válek vpadli do Čech Němci a celou obec rozbořili. Usedlíci museli obec obnovit a postavili gotický farní kostel sv.&nbsp;Mikuláše. O&nbsp;dvacet let později byla obec opět poničena, tentokrát křižáckými žoldnéři.</span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Ve&nbsp;20.&nbsp;letech&nbsp;16.&nbsp;století byla postavena v&nbsp;Přísečnici Vilémem Hasištejnským tvrz obklopena vodním příkopem a padacím mostem. Po koupi tvrze a celé Přísečnice Šliky se obec velmi rozvinula a zbohatla. Bylo povýšeno na královské město s&nbsp;právem užívání městského znaku. Za nějaký čas o&nbsp;ni Šlikové přišli a celé přísečnické panství řídil královský hejtman.</span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Slibný rozvoj města narušila třicetiletá válka, kdy bylo panství často pleněno švédskými nájezdy. Pro Přísečnici byl nejhorší rok&nbsp;1640, ve kterém ji nechal generál Bannér vypálit. Shořelo skoro celé město včetně tvrze. Po konci války zůstalo v&nbsp;kraji velmi málo obyvatel a město bylo značně poničené. Lidé začali s&nbsp;obnovou svých stavení a roku&nbsp;1690 byla opravena i tvrz. V&nbsp;polovině 18.&nbsp;století byla tvrz stržena a na jejím místě byl postaven barokní zámek.</span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Během sedmileté války opět trpělo město rekvizicemi, ubytováním vojsk nebo placení výpalného. Střídavě tu sídlila pruská a císařská vojska. Roku&nbsp;1759 zde vyhořelo 89&nbsp;obytných domů, kostel a fara a kraj začal hladovět. Všechny budovy byly obnoveny, včetně kostela a pozdně barokní fary a radnice.</span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Téměř 50&nbsp;let se město dále vyvíjelo. Velmi se tu rozvinulo krajkářství, dále pak tkalcovství. Pěstovaly se zde brambory, zelí a oves. Avšak roku&nbsp;1811 přišla další pohroma v&nbsp;podobě rozsáhlého požáru. Ze&nbsp;400 domů zůstalo pouhých 66. Lidé přišli o&nbsp;příbytky i živobytí. O&nbsp;dva roky později se za hranicí města utábořili vojáci odcházející z&nbsp;bitvy proti Napoleonovi. Bylo to pro místní obyvatel další strádání v&nbsp;podobě loupeží dobytka, koní a povozů.</span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Město se postupně vzpamatovalo z&nbsp;minulých pohrom a v&nbsp;roce 1826 byla na náměstí vystavěna empírová radnice, ve které později sídlil městský úřad. Přísečnice se stala sídlem okresního úřadu a dalších okresních institucích.</span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Protože se město odmítlo připojit na železniční trať budovanou v&nbsp;70.&nbsp;letech 19.&nbsp;století, začalo postupně upadat.</span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Prožilo 1.&nbsp;i&nbsp;2.&nbsp;světovou válku a po odsunu Němců tu zůstala pouze třetina obyvatel. V&nbsp;letech 1954 a 1955 byly připojeny k&nbsp;Přísečnici Kryštofovy Hamry, Dolina, Kotlina, Venkov, Mezilesí a Rusová. Od července 1960 byl okres Přísečnice společně s&nbsp;okresem Kadaň začleněny do okresu Chomutov.</span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Na konci 60.&nbsp;let byla přísečnická oblast vybrána pro postavení nové nádrže na pitnou vodu. Obyvatelé byli přestěhováni do nedalekých obcí Kovářská, Měděnec a Kryštofovy Hamry. Před úplnou demolicí byly zdokumentovány významné stavební a umělecké památky, ostatky zesnulých byly převezeny a uloženy v&nbsp;lesním hřbitově ve Vejprtech. Postupně byly vybudovány nové komunikace a nakonec byly přeloženy linky vysokého napětí.</span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Přísečnice z&nbsp;důvodu zatopení obce přehradním jezerem v&nbsp;roce 1974 zanikla (úředně byla zrušena 30.&nbsp;6.&nbsp;1974) a její katastr byl připojen k&nbsp;nově vytvořenému Městskému národnímu výboru Kryštofovy Hamry.</span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech"><i>Text byl převzat z&nbsp;publikace Přísečnice - zatopená, ale nezapomenutá (Binterová, Děd, Müller, 2004)</i></span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech"></span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+      </div>
+    </div>
+    <footer class="navbar-fixed-bottom">
+      <div class="container paticka">
+        <span class="czech">&copy; Ing. Renata Duchnová s použitím knihovny <a href="http://getbootstrap.com"><i>Bootstrap</i></a></span>
+        <span class="english">&copy; Ing. Renata Duchnová with contributions of <a href="http://getbootstrap.com"><i>Bootstrap</i></a> library</span>
+
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>

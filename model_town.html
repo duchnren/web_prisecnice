@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="alternate stylesheet" href="css/lang/english.css" title="english" media="screen"/>
+    <link rel="alternate stylesheet" href="css/lang/french.css" title="french" media="screen"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="css/jquery.fancybox.css" media="screen">
+    <link rel="icon" href="img/favicon.ico"/>
+
+    <script src="lib/styleswitch.js"></script>
+    
+    <title>Přísečnice / Pressnitz</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><b>
+            <span class="czech">Přísečnice</span>
+            <span class="english">Pressnitz</span>
+            <span class="french">Pressnitz</span></b></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">O Obci</span>
+                <span class="english">Town</span>
+                <span class="french">Le village</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="loc_his.html">
+                  <span class="czech">O Obci</span>
+                  <span class="english">The town</span>
+                  <span class="french">Le village</span>
+                  </a></li>
+<!--
+                  <li><a href="location.html">
+                  <span class="czech">Poloha</span>
+                  <span class="english">Location</span>
+                  <span class="french">La localisation</span>
+                  </a></li>
+                  <li><a href="history.html">
+                  <span class="czech">Historie</span>
+                  <span class="english">History</span>
+                  <span class="french">La histoire</span>
+                  </a></li>
+                  <li><a href="urban.html">
+                  <span class="czech">Urbanistický vývoj</span>
+                  <span class="english">Urban development</span>
+                  <span class="french">Le développement urbain du village</span>
+                  </a></li>
+-->
+                  <li><a href="landUse.html">
+                  <span class="czech">Vývoj využití ploch</span>
+                  <span class="english">Land Use</span>
+                  <span class="french">L'utilisation des terres</span>
+                  </a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">Rekonstrukce obce</span>
+                <span class="english">Reconstruction of the town</span>
+                <span class="french">La reconstruction du village</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="reconstruction.html">
+                  <span class="czech">Úvod</span>
+                  <span class="english">Introduction</span>
+                  <span class="french">La introduction</span>
+                  </a></li>
+                  <li><a href="model_town.html">
+                  <span class="czech">Model středu obce</span>
+                  <span class="english">The model of the town centre</span>
+                  <span class="french">Le modèle du village</span>
+                  </a></li>
+                  <li><a href="models.html">
+                  <span class="czech">Modely buduv</span>
+                  <span class="english">Models</span>
+                  <span class="french">Des modèles de bâtiments</span>
+                  </a></li>
+                </ul>
+              </li>
+<!--
+              <li><a href="about.html">
+              <span class="czech">O Projektu</span>
+              <span class="english">About</span>
+              <span class="french">A propos du projet</span>
+              </a></li>
+-->
+              <li><a href="contakt.html">
+              <span class="czech">Kontakt</span>
+              <span class="english">Contact</span>
+              <span class="french">Le contact</span>
+              </a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">Jazyk</span>
+                <span class="english">Language</span>
+                <span class="french">Langue</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:chooseStyle('none', 60)">Česky</a></li>
+                  <li><a href="javascript:chooseStyle('english', 60)">English</a></li>
+<!--                 <li><a href="javascript:chooseStyle('french', 60)">Fran&ccedil;ais</a></li>-->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <div class="container">
+        <h2><span class="czech">Modelu středu obce</span>
+        <span class="english">The model of the town center</span>
+        <span class="french"></span></h2>
+        
+        <h3><span class="czech">Ukázka pomocí obrázků</span>
+        <span class="english">The demonstration via pictures</span>
+        <span class="french"></span></h3>
+        
+        <p><span class="czech">Po kliknutí na obrázek se zobrazí obrázek v plné velikosti.</span>
+        <span class="english">Clicking on the image will display the same image in full size.</span>
+        <span class="french"></span></p>
+        
+        <div class="row">
+          <div class="list-group gallery">
+            <div class="col-sm-4 col-xs-6 col-md-3 col-lg-3">
+              <a href="img/detail01.png" class="fancybox-button thumbnail" rel="ligthbox" title="č. p. (N°) 2/3, 4, 5">
+                <img src="img/detail01_min.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-3 col-lg-3">
+              <a href="img/detail02.png" class="fancybox-button thumbnail" rel="ligthbox" title="č. p. (N°) 4, 5, 6">
+                <img src="img/detail02_min.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-3 col-lg-3">
+              <a href="img/detail03.png" class="fancybox-button thumbnail" rel="ligthbox" title="č. p. (N°) 7, 8, 9">
+                <img src="img/detail03_min.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-3 col-lg-3">
+              <a href="img/detail04.png" class="fancybox-button thumbnail" rel="ligthbox" title="č. p. (N°) 9, 10/11">
+                <img src="img/detail04_min.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-3 col-lg-3">
+              <a href="img/detail05.png" class="fancybox-button thumbnail" rel="ligthbox" title="č. p. (N°) 15, 16, 17, 18">
+                <img src="img/detail05_min.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-3 col-lg-3">
+              <a href="img/detail06.png" class="fancybox-button thumbnail" rel="ligthbox" title="č. p. (N°) 60, 61, 62">
+                <img src="img/detail06_min.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-3 col-lg-3">
+              <a href="img/detail07.png" class="fancybox-button thumbnail" rel="ligthbox" title="č. p. (N°) 70, 71, 72">
+                <img src="img/detail07_min.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-3 col-lg-3">
+              <a href="img/detail08.png" class="fancybox-button thumbnail" rel="ligthbox" title="č. p. (N°) 72, 73">
+                <img src="img/detail08_min.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-3 col-lg-3">
+              <a href="img/detail09.png" class="fancybox-button thumbnail" rel="ligthbox" title="č. p. (N°) 227, 229">
+                <img src="img/detail09_min.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-3 col-lg-3">
+              <a href="img/celek01.png" class="fancybox-button thumbnail" rel="ligthbox" title="Celkový pohled (Overall view of the model)">
+                <img src="img/celek01_min.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-3 col-lg-3">
+              <a href="img/celek02.png" class="fancybox-button thumbnail" rel="ligthbox" title="Celkový pohled (Overall view of the model)">
+                <img src="img/celek02_min.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        
+        <h3><span class="czech">Ukázka pomocí knihovny THREE.js</span>
+        <span class="english">The demonstration via THREE.js library</span>
+        <span class="french"></span></h3>
+        
+        <p><span class="czech">Model obce se zobrazí po kliknutí <a class="various" data-fancybox-type="iframe" href="sight/town.html">zde.</a></span>
+        <span class="english">The model of the town will be displayed after cliking <a class="various" data-fancybox-type="iframe" href="sight/town.html">here.</a></span>
+        <span class="french"></span></p>
+        
+        <p><span class="czech">Stažení modelu obce <a href="download/town.zip">zde.</a></span>
+        <span class="english">Download the model of the town <a href="download/town.zip">here.</a></span>
+        <span class="french"></span></p>
+        
+        <p><span class="czech"></span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+      </div>
+    </div>
+
+    <footer class="navbar-fixed-bottom">
+      <div class="container paticka">
+        <span class="czech">&copy; Ing. Renata Duchnová s použitím knihovny <a href="http://getbootstrap.com"><i>Bootstrap</i></a></span>
+        <span class="english">&copy; Ing. Renata Duchnová with contributions of <a href="http://getbootstrap.com"><i>Bootstrap</i></a> library</span>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="lib/jquery.fancybox.js"></script>
+    <script>
+      $(document).ready(function(){
+    //FANCYBOX
+    //https://github.com/fancyapps/fancyBox
+        $(".fancybox-button").fancybox({
+          prevEffect: "none",
+          nextEffect: "none",
+          helpers: {
+            title: {type: "inside"},
+            buttons: {},
+            thumbs: {width:50, height: 50}
+          }
+        });
+        $(".various").fancybox({
+          maxWidth: 800,
+          fitToView: false,
+//          width: "70%",
+//          height: "70%",
+          autoSize: false,
+          closeClick: false,
+          openEffect: "none",
+          closeEffect: "none"
+        })
+      });
+    </script>
+    
+  </body>
+</html>

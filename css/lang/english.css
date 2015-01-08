@@ -1,0 +1,15 @@
+.english {
+  display: block;
+}
+
+li .english {
+  display: inline;
+}
+
+.czech {
+  display: none;
+}
+
+.french {
+  display: none;
+}

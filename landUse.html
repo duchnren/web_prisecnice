@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="alternate stylesheet" href="css/lang/english.css" title="english" media="screen"/>
+    <link rel="alternate stylesheet" href="css/lang/french.css" title="french" media="screen"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css"/>
+    <link rel="icon" href="img/favicon.ico">
+
+    <script src="lib/styleswitch.js"></script>
+
+    <title>Přísečnice / Pressnitz</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><b>
+            <span class="czech">Přísečnice</span>
+            <span class="english">Pressnitz</span>
+            <span class="french">Pressnitz</span></b></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">O Obci</span>
+                <span class="english">Town</span>
+                <span class="french">Le village</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="loc_his.html">
+                  <span class="czech">O Obci</span>
+                  <span class="english">The town</span>
+                  <span class="french">Le village</span>
+                  </a></li>
+<!--
+                  <li><a href="location.html">
+                  <span class="czech">Poloha</span>
+                  <span class="english">Location</span>
+                  <span class="french">La localisation</span>
+                  </a></li>
+                  <li><a href="history.html">
+                  <span class="czech">Historie</span>
+                  <span class="english">History</span>
+                  <span class="french">La histoire</span>
+                  </a></li>
+                  <li><a href="urban.html">
+                  <span class="czech">Urbanistický vývoj</span>
+                  <span class="english">Urban development</span>
+                  <span class="french">Le développement urbain du village</span>
+                  </a></li>
+-->
+                  <li><a href="landUse.html">
+                  <span class="czech">Vývoj využití ploch</span>
+                  <span class="english">Land Use</span>
+                  <span class="french">L'utilisation des terres</span>
+                  </a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">Rekonstrukce obce</span>
+                <span class="english">Reconstruction of the town</span>
+                <span class="french">La reconstruction du village</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="reconstruction.html">
+                  <span class="czech">Úvod</span>
+                  <span class="english">Introduction</span>
+                  <span class="french">La introduction</span>
+                  </a></li>
+                  <li><a href="model_town.html">
+                  <span class="czech">Model středu obce</span>
+                  <span class="english">The model of the town centre</span>
+                  <span class="french">Le modèle du village</span>
+                  </a></li>
+                  <li><a href="models.html">
+                  <span class="czech">Modely buduv</span>
+                  <span class="english">Models</span>
+                  <span class="french">Des modèles de bâtiments</span>
+                  </a></li>
+                </ul>
+              </li>
+<!--
+              <li><a href="about.html">
+              <span class="czech">O Projektu</span>
+              <span class="english">About</span>
+              <span class="french">A propos du projet</span>
+              </a></li>
+-->
+              <li><a href="contakt.html">
+              <span class="czech">Kontakt</span>
+              <span class="english">Contact</span>
+              <span class="french">Le contact</span>
+              </a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">Jazyk</span>
+                <span class="english">Language</span>
+                <span class="french">Langue</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:chooseStyle('none', 60)">Česky</a></li>
+                  <li><a href="javascript:chooseStyle('english', 60)">English</a></li>
+<!--                 <li><a href="javascript:chooseStyle('french', 60)">Fran&ccedil;ais</a></li>-->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <div class="container">
+        <h2><span class="czech">Vývoj využití ploch</span>
+        <span class="english">Land use</span>
+        <span class="french"></span></h2>
+
+        <p><span class="czech">Vektorizované polygony byly rozděleny do kategorií využití půdy podobných těm, které byly použity v projektu LUCC Czechia. Stejné kategorie byly použity také pro vektorová data ZABAGED&reg;. </span>
+        <span class="english">Vectorized polygons have been divided into land use categories (attribute groups) similar to the LUCC Czechia project. The same categories were used for the vector data of ZABAGED&reg;. </span>
+        <span class="french"></span></p>
+
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <caption class="text-left">
+              <span class="czech">Kategorie využití ploch</span>
+              <span class="english">Land use categories</span>
+            </caption>
+            <tr class="danger fr_line">
+              <th><span class="czech">název&nbsp;kategorie</span>
+                <span class="english">land&nbsp;use&nbsp;category</span></th>
+              <th><span class="czech">obsahuje</span>
+                <span class="english">contains</span></th>
+            <tr>
+              <td><span class="czech">orná&nbsp;půda</span>
+                <span class="english">arable&nbsp;land</span></td>
+              <td><span class="czech">orná půda</span>
+                <span class="english">arable land</span></td>
+            </tr>
+            <tr>
+              <td><span class="czech">trvalé&nbsp;plochy</span>
+                <span class="english">permanent&nbsp;cultures</span></td>
+              <td><span class="czech">sady, zahrady, parky</span>
+                <span class="english">orchards, gardens, parks</span></td>
+            </tr>
+            <tr>
+              <td><span class="czech">trvalý&nbsp;travní&nbsp;porost</span>
+                <span class="english">permanent&nbsp;grassland</span></td>
+              <td><span class="czech">louky, pastviny, mokré louky, obecní pastviny</span>
+                <span class="english">meadows, pastures, wet pastures, municipal patures</span></td>
+            </tr>
+            <tr>
+              <td><span class="czech">lesní&nbsp;plochy</span>
+                <span class="english">forested&nbsp;areas</span></td>
+              <td><span class="czech">jehličnaté lesy, smíšené lesy, listnaté lesy, kosodřeviny</span>
+                <span class="english">coniferous forests, mixed forests, deciduous forests, scrub pine</span></td>
+            </tr>
+            <tr>
+              <td><span class="czech">vodní&nbsp;plochy</span>
+                <span class="english">water&nbsp;areas</span></td>
+              <td><span class="czech">řeky, potoky, říčky, náhony, rybníky, jezera, nádrže, sádky</span>
+                <span class="english">rivers, streams, brooks, mill-races, ponds, lakes, reservoirs, fish, hatcheries</span></td>
+            </tr>
+            <tr>
+              <td><span class="czech">zastavěné&nbsp;plochy</span>
+                <span class="english">built-up&nbsp;areas</span></td>
+              <td><span class="czech">nespalné budovy, spalné budovy, technická zařízení</span>
+                <span class="english">combustible and non-combustible buildings, technical objects</span></td>
+            </tr>
+            <tr>
+              <td><span class="czech">ostatní&nbsp;plochy</span>
+                <span class="english">other&nbsp;areas</span></td>
+              <td><span class="czech">komunikace, mosty, nádvoří, ulice, hřbitovy, hráze, kamenolomy, rašeliniště, neplodná půda</span>
+                <span class="english">read and railway network, bridges, courtyards, streets, cemeteries, dams, quarries, moorlands, infertile land</span></td>
+            </tr>
+          </table>
+        </div>
+
+        <p><span class="czech">Celková vektorizovaná plocha činila 2&nbsp;873,6 ha. Při vektorizaci císařských otisků bylo vytvořeno 5&nbsp;789 polygonů, u SMO-5 6&nbsp;323 polygonů. Data ze ZABAGED&reg; byla sloučena do 213 polygonů. Srovnání využití ploch &#40;v ha&#41; v zájmovém území je pro tři časové horizonty - pro roky 1842, 1953 a 2012 - zobrazeno v následující tabulce. </span>
+        <span class="english">Total vectorized area was 2&nbsp;873.6 ha, there were 5&nbsp;789 polygons vectorized on imperial imprints, 6&nbsp;323 polygons on SMO-5 and the ZABAGED&reg; data was merged into 213 polygons. A comparison of the use of land (in ha) in the area of interest for three time horizons - for the years 1842, 1953 and 2012 - is shown in the table below.</span>
+        <span class="french"></span></p>
+
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <caption class="text-left">
+              <span class="czech">Plochy využítí ploch v Přísečnici v letech 1842, 1953 a 2012</span>
+              <span class="english">Land use areas at Pressnitz in the years 1842, 1953 and 2012</span>
+            </caption>
+            <tr class="danger fr_line">
+              <th><span class="czech">kategorie&nbsp;[ha]</span>
+                <span class="english">category&nbsp;[ha]</span></th>
+              <th><span class="czech">rok&nbsp;1842</span>
+                <span class="english">year&nbsp;1842</span></th>
+              <th><span class="czech">rok&nbsp;1953</span>
+                <span class="english">year&nbsp;1953</span></th>
+              <th><span class="czech">rok&nbsp;2012</span>
+                <span class="english">year&nbsp;2012</span></th>
+            </tr>
+            <tr>
+              <td><span class="czech">orná&nbsp;půda</span>
+                <span class="english">arable&nbsp;land</span>
+              </td><td>874,5</td><td>920,1</td><td>0,7</td>
+            </tr>
+            <tr>
+              <td><span class="czech">trvalé&nbsp;plochy</span>
+                <span class="english">permanent&nbsp;cultures</span>
+              </td><td>1,7</td><td>0,7</td><td>7,5</td>
+            </tr>
+            <tr>
+              <td><span class="czech">trvalý&nbsp;travní&nbsp;porost</span>
+                <span class="english">permanent&nbsp;grassland</span>
+              </td><td>474,2</td><td>375,3</td><td>789,6</td>
+            </tr>
+            <tr>
+              <td><span class="czech">lesní&nbsp;plochy</span>
+                <span class="english">forested&nbsp;areas</span>
+              </td><td>1413,8</td><td>1446,8</td><td>1733,7</td>
+            </tr>
+            <tr>
+              <td><span class="czech">vodní&nbsp;plochy</span>
+                <span class="english">water&nbsp;areas</span>
+              </td><td>10,2</td><td>11,6</td><td>322,7</td>
+            </tr>
+            <tr>
+              <td><span class="czech">zastavěné&nbsp;plochy</span>
+                <span class="english">built-up&nbsp;areas</span>
+              </td><td>10,7</td><td>14,5</td><td>1,3</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="czech">ostatní&nbsp;plochy</span>
+                <span class="english">other&nbsp;areas</span>
+              </td><td>88,5</td><td>10,4</td><td>18,1</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-bordered tabulka">
+            <caption class="text-left">
+              <span class="czech">Vývoj populace a domů v Přísečnici</span>
+              <span class="english">Development of population and houses at Pressnitz</span>
+            </caption>
+            <tr class="danger fr_line">
+              <th><span class="czech">rok</span>
+                <span class="english">year</span></th>
+              <th>1847</th><th>1869</th><th>1880</th><th>1890</th><th>1900</th><th>1910</th><th>1921</th><th>1930</th><th>1950</th><th>1961</th><th>1970</th>
+            </tr>
+            <tr>
+              <td><span class="czech">lidé</span>
+                <span class="english">people</span></td>
+              <td>3137</td><td>2988</td><td>3387</td><td>3433</td><td>4080</td><td>3668</td><td>2632</td><td>2606</td><td>731</td><td>717</td><td>395</td>
+            </tr>
+            <tr>
+              <td><span class="czech">domy</span>
+                <span class="english">houses</span></td>
+              <td>415</td><td>425</td><td>439</td><td>448</td><td>451</td><td>432</td><td>430</td><td>435</td><td>489</td><td>?</td><td>107</td>
+            </tr>
+          </table>
+        </div>
+
+        <p><span class="czech">Nejvýraznější změna využití nastává mezi roky 1953 a 2012. Důvodem této změny je stavba vodní nádrže v&nbsp;70.&nbsp;letech 20.&nbsp;století. V&nbsp;těchto letech byla zcela zničena zástavba ve dvou vesnicích (Přísečnice a Dolina) a v&nbsp;jedné (Rusová) musela zástavba ustoupit I.&nbsp;ochrannému pásmu. Jelikož se jedná o&nbsp;nádrž na pitnou vodu, byl a je zakázán přístup na území I.&nbsp;pásma. To způsobilo přeměnu orné půdy na lesy a trvalý travní porost. Napuštěním vodní nádrže se celková hodnota výměry vodní plochy zvýšila téměř 28násobně.</span>
+        <span class="english">The most significant change of land use occurs between 1953 and 2012 due to the construction of a water reservoir in the seventies. In these years, two settlements were completely destroyed (Přísečnice and Dolina) and one village (Rusová) had to give ground to the 1st protective zone of drinking water reservoir. Thus, a conversion of arable land to forests and permanent grassland can be identified. After filling the water reservoir, the total value of the water area in this region increased almost 28 times.</span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Při porovnání tabulek vývoj využití území a vývoj populace a domů lze říci, že nárůst počtu obyvatel v roce 1900 souhlasí s nárůstem orné půdy a zastavěné plochy. Na druhé straně, rozsah ostatních ploch se výrazně snížil, což může být způsobeno ukončením těžby kamene a rašeliny. Trvalé travní plochy byly zřejmě nahrazeny ornou půdou. I přes některé úbytky a nárůstky ploch se krajina i využití ploch mezi lety 1842 a 1953 téměř nezměnily. Největší změnou byla výstavba vodní nádrže, která postihla obyvatele i krajinu oblasti.</span>
+        <span class="english">When comparing Table of Land use areas at Pressnitz and Table of the development of population and houses, it can be said that the increase in population in 1900 agrees with the increase in arable land and built-up areas. In contrast, the extent of other areas significantly decreased, which may be due to the termination of mining stone and peat. Permanent grassland was apparently replaced by arable land. Despite some increases and decreases in categories, it can be said that the landscape and its use remained almost unchanged from 1842 to 1953. The biggest change was the construction of a water dam which affected the population and landscape of the region.</span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Na následujících obrázcích si lze prohlédnout využití ploch pro jednotlivé roky.</span>
+        <span class="english">The Land use for particular years is depicted in the pictures below.</span>
+        <span class="french"></span></p>
+
+          <table class="gal">
+            <tr>
+              <td>
+                <a class="thumbnail" target="_blank" href="img/prD1.png"><img class="img-responsive" src="img/prD1min.png" alt=" "></a>
+              </td>
+              <td>
+                <a class="thumbnail" target="_blank" href="img/prD2.png"><img class="img-responsive" src="img/prD2min.png" alt=" "></a>
+              </td>
+              <td>
+                <a class="thumbnail" target="_blank" href="img/prD3.png"><img class="img-responsive" src="img/prD3min.png" alt=" "></a>
+              </td>
+            </tr>
+          </table>
+
+<!--
+        <div class="row">
+          <div class="col-md-2 col-sm-2 col-xs-6">
+            <a class="thumbnail" href="/img/prD1.png"><img class="img-responsive" src="/img/prD1min.png" alt=" "></a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <a class="thumbnail" href="/img/prD2.png">
+              <img class="img-responsive" src="/img/prD2min.png" alt=" ">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <a class="thumbnail" href="/img/prD3.png">
+              <img class="img-responsive" src="/img/prD3min.png" alt=" ">
+            </a>
+          </div>
+        </div>
+-->
+
+        <p><span class="czech"></span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+      </div>
+    </div>
+
+    <footer class="navbar-fixed-bottom">
+      <div class="container paticka">
+        <span class="czech">&copy; Ing. Renata Duchnová s použitím knihovny <a href="http://getbootstrap.com"><i>Bootstrap</i></a></span>
+        <span class="english">&copy; Ing. Renata Duchnová with contributions of <a href="http://getbootstrap.com"><i>Bootstrap</i></a> library</span>
+<!--
+        <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="czech">Jazyk</span><span class="english">Language</span><span class="french">Langue</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="javascript:chooseStyle('none', 60)">Česky</a></li>
+                      <li><a href="javascript:chooseStyle('english', 60)">English</a></li>
+                      <li><a href="javascript:chooseStyle('french', 60)">Fran&ccedil;ais</a></li>
+                    </ul>
+                </li>
+-->
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>

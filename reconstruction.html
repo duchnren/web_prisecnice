@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="alternate stylesheet" href="css/lang/english.css" title="english" media="screen"/>
+    <link rel="alternate stylesheet" href="css/lang/french.css" title="french" media="screen"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css"/>
+    <link rel="icon" href="img/favicon.ico">
+
+    <script src="lib/styleswitch.js"></script>
+
+    <title>Přísečnice / Pressnitz</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><b>
+            <span class="czech">Přísečnice</span>
+            <span class="english">Pressnitz</span>
+            <span class="french">Pressnitz</span></b></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">O Obci</span>
+                <span class="english">Town</span>
+                <span class="french">Le village</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="loc_his.html">
+                  <span class="czech">O Obci</span>
+                  <span class="english">The town</span>
+                  <span class="french">Le village</span>
+                  </a></li>
+<!--
+                  <li><a href="location.html">
+                  <span class="czech">Poloha</span>
+                  <span class="english">Location</span>
+                  <span class="french">La localisation</span>
+                  </a></li>
+                  <li><a href="history.html">
+                  <span class="czech">Historie</span>
+                  <span class="english">History</span>
+                  <span class="french">La histoire</span>
+                  </a></li>
+                  <li><a href="urban.html">
+                  <span class="czech">Urbanistický vývoj</span>
+                  <span class="english">Urban development</span>
+                  <span class="french">Le développement urbain du village</span>
+                  </a></li>
+-->
+                  <li><a href="landUse.html">
+                  <span class="czech">Vývoj využití ploch</span>
+                  <span class="english">Land Use</span>
+                  <span class="french">L'utilisation des terres</span>
+                  </a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">Rekonstrukce obce</span>
+                <span class="english">Reconstruction of the town</span>
+                <span class="french">La reconstruction du village</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="reconstruction.html">
+                  <span class="czech">Úvod</span>
+                  <span class="english">Introduction</span>
+                  <span class="french">La introduction</span>
+                  </a></li>
+                  <li><a href="model_town.html">
+                  <span class="czech">Model středu obce</span>
+                  <span class="english">The model of the town centre</span>
+                  <span class="french">Le modèle du village</span>
+                  </a></li>
+                  <li><a href="models.html">
+                  <span class="czech">Modely buduv</span>
+                  <span class="english">Models</span>
+                  <span class="french">Des modèles de bâtiments</span>
+                  </a></li>
+                </ul>
+              </li>
+<!--
+              <li><a href="about.html">
+              <span class="czech">O Projektu</span>
+              <span class="english">About</span>
+              <span class="french">A propos du projet</span>
+              </a></li>
+-->
+              <li><a href="contakt.html">
+              <span class="czech">Kontakt</span>
+              <span class="english">Contact</span>
+              <span class="french">Le contact</span>
+              </a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">Jazyk</span>
+                <span class="english">Language</span>
+                <span class="french">Langue</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:chooseStyle('none', 60)">Česky</a></li>
+                  <li><a href="javascript:chooseStyle('english', 60)">English</a></li>
+<!--                 <li><a href="javascript:chooseStyle('french', 60)">Fran&ccedil;ais</a></li>-->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <div class="container">
+        <h2><span class="czech">Rekonstrukce obce - úvod</span>
+        <span class="english">Reconstruction of the town - introdiction</span>
+        <span class="french"></span></h2>
+
+        <h3><span class="czech">Podklady a technologie</span>
+        <span class="english">Data and technology</span></h3>
+
+        <p><span class="czech">Bývalý stav obce Přísečnice a jejího okolí byl zkoumán na Císařských otiscích mapy stabilního katastru v měřítku 1&nbsp;:&nbsp;2&nbsp;880 z roku 1842 (zkr. CO), dále pak ve Státní mapě 1&nbsp;:&nbsp;5&nbsp;000 z&nbsp;roku 1953 (zkr. SMO-5). Současná situace byla prezentována souborem vektorových dat Základní báze geografických dat České republiky (zkr. ZABAGED&reg;) a pomocí ortofotomapy. Tyto mapy a data byla převzaty z Českého úřadu zeměměřického a katastrálního. Situační plán centra obce 1&nbsp;:&nbsp;500 a stavební plány a řezy některých budov byly získány z Národního památkového ústavu v Ústí nad Labem, dobové fotografie a pohlednice byly převzaty z internetových stránek zaniklých obcí a objektů v České republice - <a href="http://www.zanikleobce.cz" title="zanikle obce">www.zanikleobce.cz</a>.</span>
+        <span class="english">Former status of the town Přísečnice and its surroundings has been studied on imperial imprints of the Stable cadastre maps in the scale 1 : 2 880 from the year 1842 (CO), state map 1 : 5 000 from the year 1953 (SMO-5). Present-day situation has been represented by a set of vector data of the Fundamental Base of Geographic Data of the Czech Republic (ZABAGED&reg;) and by orthophoto. The maps/data were provided by the Czech Office for Surveying, Mapping and Cadastre. Site plan of the town centre 1 : 500 and construction plans and section views of some municipal buildings were obtained from the National Heritage Institute in Ústí nad Labem, period photos and postcards were taken from the website of extinct villages and objects in the Czech Republic – <a href="http://www.zanikleobce.cz" title="extinct villages">www.zanikleobce.cz</a>.</span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Při zpracování byl použit produkt společnosti ESRI ArcMap 10 pro georeferencování a vektorizaci mapových podkladů. Digitální model terénu centra obce a modely budov byly vytvořeny v programu SketchUp. Opensource knihovna THREE.js a Unity engine byly použity pro internetovou vizualizaci modelů. Správa, editace a prohlížení obrazových materiálů byla provedena v programu XnView.</span>
+        <span class="english">In data processing, the ESRI product ArcMap 10 was used for georeferencing and vectorizing. The digital terrain model of the town centre and models of buildings were formed in the SketchUp program. Opensource library Three.js and game engine Unity were used for internet visualization of models. Managing, editing and viewing of video materials were done in XnView program.</span>
+        <span class="french"></span></p>
+
+        <h3><span class="czech">Zpracování</span>
+        <span class="english">Data processing</span>
+        <span class="french"></span></h3>
+
+        <p><span class="czech">Prvním krokem zpracování dat bylo nastavení souřadného systému (Systém jednotné trigonometrické sítě katastrální: S&nbsp;-&nbsp;JTSK) mapových listů pomocí georeferencování. Listy SMO-5 byly georeferencovány pomocí souřadnic S&nbsp;-&nbsp;JTSK. Jednotlivé listy SMO-5 byly transformovány pomocí polynomické transformace 2. řádu na rohové body vektorizovaných polygonů mapových listů a také na střední body mapového rámu.</span>
+        <span class="english">The first step of data processing was a georeferencing of map sheets into the Czech national co-ordinate system S-JTSK. Map sheets of the State map (SMO-5) were georeferenced using the S-JTSK coordinates of the map layout. Individual sheets of SMO-5 were transformed with 2nd order polynomial transformation on the corner points of the underlying polygons (map sheets layout) and also to middle points of the map frame.</span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Listy císařských otisků map stabilního katastru byly georeferencovány na mozaiku vytvořenou z SMO-5 pomocí transformaci Spline. Identické body byly voleny na styku dvou listů, na hranici pozemků a v rozích budov. V krajních případech byly body vybrány také na křižovatkách silnic nebo na okraji vodních toků. Počet identických bodů se pohyboval v intravilánu okolo 70 a v extravilánu okolo 30.</span>
+        <span class="english">The sheets of imperial imprints of Stable cadastre maps were georeferenced on the SMO-5 mosaic using the spline transformation method. Identical points were chosen at the intersection of two sheets, at the boundary of plots and in the corners of buildings. If necessary, the points were selected also at the crossing of roads or the edge of the water flow. The number of identical points was 70 in the urban area and about 30 in rural area.</span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Použitý plán středu města byl naskenován ručním skenerem, jednotlivé soubory byly uloženy do formátu *.jpg s rozlišením 300dpi. Naskenované části byly pořízeny s dostatečným překryvem, které umožnilo následné georeferencování. Rastrové soubory byly georeferencovány pomocí transformace Spline pomocí map pozemkového katastru ze 30. let 20. století, které byly k dispozici jako mapová služba běžící na ArcGIS serveru Laboratoře geoinformatiky na Univerzitě J. E. Purkyně v Ústí nad Labem. Identické body byly voleny především v rozích budov.</span>
+        <span class="english">The site plan of the town centre was scanned using a handheld scanner. Individual files were saved in JPEG format with a resolution of 300dpi. Scanned sections were taken with sufficient overlap suitable for georeferencing. Raster files were georeferenced by a spline method on the Land cadastre maps from the thirties of the 20th century available as a map service running on the ArcGIS Server of the Laboratory of Geoinformatics at the J. E. Purkyně University in Ústí nad Labem. Identical points were chosen mainly in the corners of buildings.</span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Po ukončení georeferencování byly zpracované mapové listy uloženy do mozaiky. Mozaiky z SMO-5 a CO byly vektorizovány a použity pro analýzu využití ploch.</span>
+        <span class="english">To obtain continuous map layers, the processed map sheets were saved as a mosaic files. Then, the areas of land use categories have been vectorized on the CO and SMO-5 maps.</span>
+        <span class="french"></span></p>
+
+        <h3><span class="czech">Modelování budov</span>
+        <span class="english">Modeling the town centre</span>
+        <span class="french"></span></h3>
+
+        <table class="sketch">
+          <tr>
+            <td>
+              <img src="img/sketch.png" alt="přehrada (2.5D)" title="Přehrada (2.5D)">
+            </td>
+          </tr>
+          <tr>
+            <td class="label_pic">
+              <span class="czech">Ukázka modelování budovy</span>
+              <span class="english">Demonstration of modeling of the building</span>
+            </td>
+          </tr>
+        </table>
+
+        <p><span class="czech">Digitální model terénu (DMT) centra obce byl vytvořen v programu SketchUp 2013 pomocí funkce <i>From Contours</i> a vektorizovaných vrstevnic, které byly získány z plánu obce 1&nbsp;:&nbsp;500 z roku 1972. DMT byl pak použit jako podklad pro modelování budov a kompletní vizualizaci.</span>
+        <span class="english">Digital terrain model (DTM) of the town centre has been created in the SketchUp 2013 program by the function From Contours, using vectorized contour lines from the Site plan of the town center 1 : 500 from the year 1972. The DTM then served for generating background levels for modeling of buildings and for complete visualization.</span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Před vlastním modelováním bylo nutné roztřídit jednotlivé budovy do dvou skupin podle dostupnýnch údajů: první skupina obsahovala fotografie a pohlednice bývalých budov, v druhé pak byly budovy s dostupnými stavebními plány. Všechny modely budov byly vytvořenz pomocí aplikace SketchUp 2014. Pro budovy s podklady v první skupině bylo nutné před modelací získat půdorysy včetně převýšení z digitálního modelu terénu (DMT). Tento krok byl důležitý pro vizualizaci modelu budovy v rámci DMT. U těchto modelů byla vytvořena pouze jedna nebo dvě fasády. Modely, které vznikaly podle stavebních plánů, byly vytvářeny s rovným půdorysem a jsou plnohodnotným modelem stavby. Budovy mají vymodelovány všechny obvodové stěny a interiér.</span>
+        <span class="english">Before modeling of individual houses it was necessary to sort the objects in two groups according to available data: the first group involved photographs and postcards of former buildings, while in the second group there were the buildings with available construction plans. Models of buildings were generated with SketchUp 2014. For the first group it was necessary to derive ground plans including height difference from a digital terrain model. This step was important for visualization of modeled buildings on the DTM. In these models, only one or two facades have been created. The models created from building plans were constructed on a horizontal ground plan, as complete models of the buildings – for these objects it was possible to model all outer walls and some interior details, too.</span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Při modelaci z fotografií bylo prvním krokem odhadnutí přibližné výšky stavby. Ta byla odhadnuta pomocí předmětů, jejichž výška byla známá (např. popelnice). Následovalo modelování obvodových stěn pomocí funkce Push/Pull vytažením půdorysu do požadované výšky. Do stěn pak byla přidána vymodelovaná okna, dveře a římsy. Dalším krokem bylo dokreslení střechy, vikýřů a komínů. Posledním krokem bylo přiřazení barev a textur. Při modelaci ze stavebních plánů se postupovalo obdobně. Celý plán byl zobrazen v programu SketchUp a pak následně „obkreslen“. Tím byl získán rozměrově přesný korpus modelu, který byl doplněn o podrobnosti.</span>
+        <span class="english">For modeling from photos it was important to estimate the approximate height of the building using objects with known height (e.g. dust bins). By the Push / Pull function the external walls were constructed to the desired height and then the doors, windows and cornices could be added. The next step was to depict roofs, dormers and chimneys. Finally, colors and textures were assigned to object elements. The process of modeling from building plans was similar: the plan was displayed in the SketchUp program and then depicted by "tracing". This provided a dimensionally accurate corpus of the model which has been accompanied by details.</span>
+        <span class="french"></span></p>
+
+        <h3><span class="czech">Ovládání prohlídky pomocí THREE.js</span>
+        <span class="english">THREE.js control</span>
+        <span class="french"></span></h3>
+
+        <p><span class="czech">Prohlídka se ovládá pomocí myši:</span>
+        <span class="english">The sightseeing is controlled by mouse:</span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Otáčení modelem: <i>levé tlačítko myši</i></span>
+        <span class="english">Rotating the model: <i>left mouse button</i></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Posouvání modelu: <i>pravé tlačítko myši</i></span>
+        <span class="english">Movement to the model: <i>right mouse button</i></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Příblížení / oddálení: <i>střední tlačítko myši, kolečko myši</i></span>
+        <span class="english">Zoom: <i>middle mouse button, mouse wheel</i></span>
+        <span class="french"></span></p>
+
+        <h3><span class="czech">Ovládání nástroje Unity</span>
+        <span class="english">Unity control</span>
+        <span class="french"></span></h3>
+
+        <p><span class="czech">Pohyb dopředu a zpět: šipky <i>"nahoru"</i> a <i>"dolu"</i> nebo klávesy <i>"w"</i> a <i>"s"</i></span>
+        <span class="english">Forward and back movement: cursor arrow <i>"up"</i> a <i>"down"</i> or keys <i>"w"</i> a <i>"s"</i></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Pohyb do stran: šipky <i>"vlevo"</i> a <i>"vpravo"</i> nebo klávesy <i>"a"</i> a <i>"d"</i></span>
+        <span class="english">Movement to the sides: cursor arrow <i>"left"</i> a <i>"right"</i> or keys <i>"a"</i> a <i>"d"</i></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Otáčení kamery: <i>"pohyb myší"</i></span>
+        <span class="english">Rotating the camera: <i>"mouse movement"</i></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech">Skákání (překonávání překážek): <i>"mezerník"</i></span>
+        <span class="english">Jumping: <i>"space"</i></span>
+        <span class="french"></span></p>
+
+        <p><span class="czech"></span>
+        <span class="english"></span>
+        <span class="french"></span></p>
+      </div>
+    </div>
+
+    <footer class="navbar-fixed-bottom">
+      <div class="container paticka">
+        <span class="czech">&copy; Ing. Renata Duchnová s použitím knihovny <a href="http://getbootstrap.com"><i>Bootstrap</i></a></span>
+        <span class="english">&copy; Ing. Renata Duchnová with contributions of <a href="http://getbootstrap.com"><i>Bootstrap</i></a> library</span>
+<!--
+        <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="czech">Jazyk</span><span class="english">Language</span><span class="french">Langue</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="javascript:chooseStyle('none', 60)">Česky</a></li>
+                      <li><a href="javascript:chooseStyle('english', 60)">English</a></li>
+                      <li><a href="javascript:chooseStyle('french', 60)">Fran&ccedil;ais</a></li>
+                    </ul>
+                </li>
+-->
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>

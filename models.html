@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="alternate stylesheet" href="css/lang/english.css" title="english" media="screen"/>
+    <link rel="alternate stylesheet" href="css/lang/french.css" title="french" media="screen"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="http://ol3js.org/en/master/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css" media="screen">
+<!--    <link rel="stylesheet" href="css/openLayers/style.css">-->
+    <link rel="icon" href="img/favicon.ico">
+
+    <script src="lib/styleswitch.js"></script>
+<!--    <script src="http://ol3js.org/en/master/build/ol.js"></script>-->
+
+    <title>Přísečnice / Pressnitz</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><b>
+            <span class="czech">Přísečnice</span>
+            <span class="english">Pressnitz</span>
+            <span class="french">Pressnitz</span></b></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">O Obci</span>
+                <span class="english">Town</span>
+                <span class="french">Le village</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="loc_his.html">
+                  <span class="czech">O Obci</span>
+                  <span class="english">The town</span>
+                  <span class="french">Le village</span>
+                  </a></li>
+<!--
+                  <li><a href="location.html">
+                  <span class="czech">Poloha</span>
+                  <span class="english">Location</span>
+                  <span class="french">La localisation</span>
+                  </a></li>
+                  <li><a href="history.html">
+                  <span class="czech">Historie</span>
+                  <span class="english">History</span>
+                  <span class="french">La histoire</span>
+                  </a></li>
+                  <li><a href="urban.html">
+                  <span class="czech">Urbanistický vývoj</span>
+                  <span class="english">Urban development</span>
+                  <span class="french">Le développement urbain du village</span>
+                  </a></li>
+-->
+                  <li><a href="landUse.html">
+                  <span class="czech">Vývoj využití ploch</span>
+                  <span class="english">Land Use</span>
+                  <span class="french">L'utilisation des terres</span>
+                  </a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">Rekonstrukce obce</span>
+                <span class="english">Reconstruction of the town</span>
+                <span class="french">La reconstruction du village</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="reconstruction.html">
+                  <span class="czech">Úvod</span>
+                  <span class="english">Introduction</span>
+                  <span class="french">La introduction</span>
+                  </a></li>
+                  <li><a href="model_town.html">
+                  <span class="czech">Model středu obce</span>
+                  <span class="english">The model of the town centre</span>
+                  <span class="french">Le modèle du village</span>
+                  </a></li>
+                  <li><a href="models.html">
+                  <span class="czech">Modely buduv</span>
+                  <span class="english">Models</span>
+                  <span class="french">Des modèles de bâtiments</span>
+                  </a></li>
+                </ul>
+              </li>
+<!--
+              <li><a href="about.html">
+              <span class="czech">O Projektu</span>
+              <span class="english">About</span>
+              <span class="french">A propos du projet</span>
+              </a></li>
+-->
+              <li><a href="contakt.html">
+              <span class="czech">Kontakt</span>
+              <span class="english">Contact</span>
+              <span class="french">Le contact</span>
+              </a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="czech">Jazyk</span>
+                <span class="english">Language</span>
+                <span class="french">Langue</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:chooseStyle('none', 60)">Česky</a></li>
+                  <li><a href="javascript:chooseStyle('english', 60)">English</a></li>
+<!--                 <li><a href="javascript:chooseStyle('french', 60)">Fran&ccedil;ais</a></li>-->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <div class="container">
+        <h2><span class="czech">Modely budov</span>
+        <span class="english">Models</span>
+        <span class="french">Des modèles de bâtiments</span></h2>
+
+        <form id="formular">
+          <label class="vyber">
+<!--
+            <span class="czech">č. p.: </span>
+            <span class="english">N&deg;: </span>
+-->
+            <select id="coo" name="coo" class="vyber">
+              <option selected="selected" value="br" id="0">-------</option>
+            </select>
+          </label>
+
+          <button id="but" class="but" type="button">
+            <span class="czech">Výchozí pohled</span><span class="english">Default view</span>
+          </button>
+
+          <label class="checkbox-inline checkMap">
+            <input id="checkMap" type="checkbox" value="option1" disabled>
+            <span class="hideMap czech">Skrýt mapu</span>
+            <span class="hideMap english">Hide the map</span>
+          </label>
+
+          <label class="checkbox-inline checkDes">
+            <input id="checkDes" type="checkbox" value="option2" disabled checked>
+            <span class="hideMap czech">Popis</span>
+            <span class="hideMap english">Description</span>
+          </label>
+        </form>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 mapsec">
+          <div id="map" class="map"></div>
+          <input id="swipe" type="range" style="width: 100%">
+        </div>
+
+        <div id="obsah-model" class="col-xs-12 col-sm-12 col-md-6 modelsec">
+          <iframe class="frame" src="sight/start.html"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+     <div id="photo" class="col-xs-3 col-sm-3 col-md-3"></div>
+     <div id="obsah-popis" class="col-xs-9 col-sm-9 col-md-9"></div>
+
+    </div>
+
+
+    <footer class="navbar-fixed-bottom">
+      <div class="container paticka">
+        <span class="czech">&copy; Ing. Renata Duchnová s použitím knihovny <a href="http://getbootstrap.com"><i>Bootstrap</i></a></span>
+        <span class="english">&copy; Ing. Renata Duchnová with contributions of <a href="http://getbootstrap.com"><i>Bootstrap</i></a> library</span>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+<!--    <script src="lib/OpenLayers.js"></script>    -->
+    <script src="http://ol3js.org/en/master/build/ol.js"></script>
+    <script src="lib/listOfhaus.js"></script>
+    <script src="lib/models.js"></script>
+    <script src="lib/jquery.fancybox.js"></script>
+    <script>
+      $(document).ready(function(){
+    //FANCYBOX
+    //https://github.com/fancyapps/fancyBox
+//        $(".fancybox-button").fancybox({
+//          prevEffect: "none",
+//          nextEffect: "none",
+//          helpers: {
+//            title: {type: "inside"},
+//            buttons: {},
+//            thumbs: {width:50, height: 50}
+//          }
+//        });
+        $(".fancybox")
+          .fancybox({
+            padding: 10
+          });
+        $(".various").fancybox({
+          maxWidth: 650,
+          maxHeight: 517,
+          fitToView: true,
+//          width: "70%",
+//          height: "70%",
+          autoSize: false,
+          closeClick: false,
+          openEffect: "none",
+          closeEffect: "none"
+        })
+      });
+    </script>
+
+  </body>
+</html>
